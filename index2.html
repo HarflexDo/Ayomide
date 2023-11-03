@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+
+        }
+
+        header {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+            padding: 2%;
+            font-weight: 900;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+        }
+
+        body {
+            width: 100%;
+            background-color: rgb(72, 53, 53);
+
+        }
+
+
+        nav ul a:hover {
+            color: rgb(57, 57, 57);
+            flex-wrap: wrap;
+        }
+
+        /* home section */
+        #home {
+            height: 135vh;
+            width: 100%;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            /* animation-name: afeez; */
+        }
+        @media screen and (max-width:600px){
+            #home{
+                font-size: 1rem;
+                text-align: center;
+                width: fit-content;
+                margin-left: 0;
+                padding: 0;
+            }
+        }
+
+
+
+        .one {
+            height: 520px;
+            width: 400px;
+            margin-top: 90px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+
+        .one:first-child {
+            margin-top: 80px;
+           
+        }
+
+        .one:last-child {
+            margin-top: 0px;
+        }
+
+
+      
+
+        .wrt {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+            color: orange;
+            flex-wrap: wrap;
+            font-size: 1rem;
+        }
+
+        .HH {
+            margin-top: 109px;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            background-color: orange;
+            color: wheat;
+        }
+
+        .HH:hover {
+            color: rgb(255, 255, 255);
+
+        }
+
+        span {
+            font-style: oblique;
+        }
+
+        .im2 {
+            margin-top: 10px;
+            height: 500px;
+            width: 300px;
+            padding: 20px 20px 20px 20px;
+            animation-name: afeez;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transform: translateY(20%);
+            animation-delay: 2s;
+            animation-direction:alternate;
+
+        }
+        @keyframes afeez {
+            0%{transform: translate(0px);}
+
+        }
+        /* about page */
+        #about {
+            height: 90vh;
+            width: 100%;
+        }
+        .tet{
+           padding: 0% 10%;
+        }
+
+        .two {
+            height: 400px;
+            width: 500px;
+            background-color: rgb(18, 15, 15);
+            transform: translateY(20%);
+            animation-name: afeez;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .two:first-child {
+            margin-top: 170px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .two:last-child {
+            margin-top: 180px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            margin-top: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+            width: 100%;
+        }
+
+        .tet {
+            text-align: center;
+            font-weight: 900;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+            text-transform: uppercase;
+            text-align: justify;
+        }
+
+        .para {
+            margin-top: 60px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+        }
+
+        /* service section */
+        #service {
+            margin-top: 620px;
+            height: 80vh;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .three {
+            height: 280px;
+            width: 400px;
+            background-color: rgb(18, 15, 15);
+            text-align: center;
+            font-size: 1rem;
+            color: orange;
+            border-bottom-left-radius: 30px;
+        }
+        legend{
+            text-align: center;
+            color: orange;
+            padding: 2%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+        }
+    
+        .three:last-child {
+           
+         border-top-right-radius: 30px;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+        }
+
+
+        .tt1 {
+            margin-top: 10px;
+        }
+        .ptext{
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .bbt{
+            margin-top: 110px;
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: rgb(16, 12, 12);
+            color: orange;
+        }
+        .bbt:hover{
+            color: gold;
+        }
+        .ptext1{
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+        .bbt2{
+            margin-top: 110px;
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+            background-color: rgb(16, 12, 12);
+            color: orange;
+        }
+        .bbt2:hover{
+            color: gold;
+        }
+
+        /* work section */
+        #work {
+            text-align: center;
+            height: 110vh;
+            width: 100%;
+            margin-top: 297px;
+        }
+
+        .four {
+            margin-top: 140px;
+            height: 300px;
+            width: 300px;
+            background-image: url(./work-2.jpg);
+            background-size: cover;
+            overflow-y: hidden;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            color: orange;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            border: 4px solid orange;
+            animation-name: colorFlow;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            flex-wrap: wrap;
+        }
+        @keyframes colorFlow {
+            0% { border-color: gold; }
+            20% { border-color: yellow; }
+            40% { border-color: black; }
+            60% { border-color: orange; }
+            60% { border-color: white; }
+
+        }
+        .for {
+            height: 100%;
+            width: 100%;
+            transform: translateY(100%);
+            transition: 2s ease-in-out;
+        }
+
+        .four:hover .for {
+            transform: translateY(0);
+        }
+
+        .four:first-child {
+            margin-top: 290px;
+            flex-wrap: wrap;
+        }
+        .four:last-child {
+            margin-top: 290px;
+            flex-wrap: wrap;
+        }
+
+        .container4 {
+            margin-top: -120px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .tr {
+            align-items: center;
+            font-size: 2rem;
+            color: orange;
+            text-decoration: underline;
+            padding: 8%;
+        }
+        /* portfolio section */
+        #portfolio{
+            margin-top: 380px;
+            height: 60vh;
+            flex-wrap: wrap;
+        }
+        .container7{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .seven{
+            width: 50%;
+            height: 400px;
+            
+        }
+
+        .imm2{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            border-radius: 40px;
+        }
+        /* contact section */
+        #contact{
+            margin-top: 400px;
+            width: 100%;
+            height: 100vh;
+        }
+        .five{
+            height: 400px;
+            width: 400px;
+        }
+
+        .container5{
+            
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            color: orange;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+        }
+        .trap{
+           margin-top: 300px;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: orange;
+        }
+        .buttin{
+            padding: 2%;
+            background-color: orange;
+            border-radius: 30px;
+        }
+        nav summary{
+            color: orange;
+            display: flex;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            font-size: 1rem;
+        }
+        nav ul a{
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+            color: orange;
+        }
+        .fa-facebook{
+            color: orange;
+            font-size: 30px;
+            border-radius: 50%;
+            /* float: right; */
+        }
+        .fa-twitter{
+            color: orange;
+            font-size: 30px;
+            /* float: right; */
+        }
+        .fa-instagram{
+            color: orange;
+            font-size: 30px;
+            /* float: right; */
+        }
+        .fa-linkedin{
+            margin-top: 2px;
+            color: orange;
+            font-size: 30px;
+            /* float: right; */
+        }
+        .social{
+            padding: 2%;
+            color: orange;
+            display: inline;
+            border: 3px solid orange;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px orange;
+        }
+        #home h1{
+            color: orange;
+            font-size: 4rem;
+            width: fit-content;
+            position: relative;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav>
+        <header>ISMAILA AFEEZ</header>
+        <details>
+            <summary>Menu</summary>
+            <ul>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#work">Work</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </ul>
+        </details>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <div class="one"><br><br><br>
+                <h1>Hi,I'M <span></span></h1>
+                <h1>Ismaila <span></span></h1>
+                <h1>Afeez <span></span> </h1><br><br>
+                <p class="wrt">An aspiring Front-end web Developer <br> and UI/UX Designer.</h1>
+                </p>
+                <a href="https://wa.me/+2348067356383" target="blank"><button class="HH">HIRE ME</button>
+                   <div class="social"> <i class="fa-brands fa-facebook"></i></div>
+                   <div class="social"> <i class="fa-brands fa-twitter"></i></div>
+                   <div class="social"> <i class="fa-brands fa-instagram"></i></div>
+                    <div class="social"><i class="fa-brands fa-linkedin"></i></div>
+                </a>
+            </div>
+            <div class="one">
+                <img src="./IMG_2388.JPG" class="im2" style="border-radius: 50%;">
+            </div>
+        </div>
+    </section><hr>
+     <section id="about">
+        <div class="container2">
+            <div class="two">
+                <h1 class="tet">ABOUT ME</h1>
+                <p class="para">I'm your trusted Web Developer. With years of experience in the industry, I'm passionate
+                    about helping you find the best keyword research that suits your needs and desire.
+                    we believe in providing exceptional customer service from start to finish.
+                </p>
+            </div>
+            <div class="two">
+                <h1 class="tet">Skills</h1>
+                <li class="para">HTML</li>
+                <li class="para">CSS</li>
+                <li class="para">JAVASCRIPT</li>
+            </div>
+    </section>
+    <section id="service">
+       <fieldset>
+        <legend>SERVICE</legend>
+        <div class="container3">
+            <div class="three">
+                <i class="fa-solid fa-code"></i>
+                <h1 class="tt1">WEB DEVELOPMENT</h1><br>
+                <p class="ptext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, voluptas?</p>
+                <button class="bbt">Read more</button>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-u"></i>
+                <h1 class="tt1">UI/UX DESIGN</h1>
+                <p class="ptext1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, voluptas?</p>
+                <button class="bbt2">Read more</button>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-leaf"></i>
+                <h1 class="tt1">GRAPHICS AND DESIGN</h1>
+                <p class="ptext1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, voluptas?</p>
+                <button class="bbt2">Read more</button>
+            </div>
+        </div>
+       </fieldset>
+    </section>
+    <section id="work">
+        <fieldset>
+        <legend><h1 class="tr">WHAT I OFFER</h1></legend>
+        <div class="container4">
+            <div class="four">
+                <div class="for">Business website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Personal website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Ecommerce website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+            <div class="four">
+                <div class="for">Blog website <br><br><br><br><br><br>Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Officia, maiores!</div>
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio">
+        <fieldset>
+            <Legend>RECENT PROJECTS</Legend>
+        <div class="container7">
+            <div class="seven">
+                <img src="./personal.PNG" class="imm2">
+            </div>
+            <div class="seven">
+                <img src="./car.PNG" class="imm2">
+            </div>
+        </div>
+        </fieldset>
+    </section>
+    <section id="contact">
+        <h1 class="trap"> CONTACT ME</h1>
+        <div class="container5">
+            <div class="five">
+                <form>
+                    <fieldset style="border-radius: 30px;">
+                        <legend>CONTACT ME</legend>
+                        <label for="First Name">First Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;"><br><br><br>
+                        <label for="last Name">Last Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;"><br><br><br>
+                        <label for="other Name">Other Name: </label>
+                        <input type="text" style="width: 400px; height: 20px;">
+                        <textarea placeholder="Write a message" cols="53" rows="20"></textarea>
+                        <button class="buttin" id="button">SEND MESSAGE</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <main style="color: orange; height: 50px; width: 100%; text-align: center; font-size: 1rem; background-color: rgb(39, 37, 37);">
+        &copy;ismaila afeez 2023
+    </main>
+</body>
+
+</html>
